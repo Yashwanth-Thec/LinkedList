@@ -18,8 +18,16 @@ int main(){
 
   n1->setNext(n2);
 
-  cout << "Student 1:" << endl;
-    
+  cout << "Node 1 Student:" << n1->getStudent()->getName() << endl;
+  cout << "ID: "<< n1->getStudent()->getID() << endl; 
+
+  cout << "Node Next Student: " << getNext()->n1->getStudent()->getName() << endl;
+
+  delete n1;
+  delete n2;
+  delete s1;
+  delete s2;
+  
 
 
 
