@@ -1,4 +1,4 @@
-#include "Node.h"
+#include "Student.h"
 
 Student::Student(char nameInput[], int idInput[]){
   strcpy(name, nameInput);
