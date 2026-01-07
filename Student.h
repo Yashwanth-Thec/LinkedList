@@ -8,7 +8,7 @@ using namespace std;
 
 class Student{
  public:
-  Student(char nameInput[], int idInput[]);
+  Student(char nameInput[], int idInput);
 
   char* getName();
   int getID();
@@ -16,8 +16,6 @@ class Student{
  private:
   char name[100];
   int id;
-
-
 };
 
 #endif

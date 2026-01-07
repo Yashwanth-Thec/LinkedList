@@ -21,7 +21,8 @@ int main(){
   cout << "Node 1 Student:" << n1->getStudent()->getName() << endl;
   cout << "ID: "<< n1->getStudent()->getID() << endl; 
 
-  cout << "Node Next Student: " << getNext()->n1->getStudent()->getName() << endl;
+  cout << "Node Next Student: " << n1->getNext()->getStudent()->getName() << endl;
+  cout << "ID: " << n1->getNext()->getStudent()->getID() << endl;
 
   delete n1;
   delete n2;

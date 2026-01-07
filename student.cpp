@@ -1,17 +1,17 @@
 #include "Student.h"
 
-Student::Student(char nameInput[], int idInput[]){
+Student::Student(char nameInput[], int idInput){
   strcpy(name, nameInput);
   id = idInput;
 }
 
-char* Student:: getName(){
+char* Student::getName(){
   return name;
 
 
 }
 
-int Student:: getID(){
+int Student::getID(){
   return id;
 
 }
