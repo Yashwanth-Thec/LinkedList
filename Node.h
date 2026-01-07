@@ -4,11 +4,11 @@
 #include <iostream>
 using namespace std;
 
-class Student; // forward declaration
+class Student; 
 
 class Node {
 public:
-    // Constructor that creates a node storing the given student pointer
+    // Constructor that creates a node storing the given student pointergit 
     Node(Student* s);
 
     // Destructor
@@ -24,8 +24,8 @@ public:
     void setNext(Node* n);
 
 private:
-    Student* student; // required variable
-    Node* next;       // required variable
+    Student* student; 
+    Node* next;       
 };
 
 #endif
