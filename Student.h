@@ -12,10 +12,12 @@ class Student{
 
   char* getName();
   int getID();
+  float getGPA();
 
  private:
   char name[100];
   int id;
+  float GPA;
 };
 
 #endif

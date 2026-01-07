@@ -1,23 +1,31 @@
-#include "Node.h"
-#include "Student.h" 
+#include <iostream>
+#include "student.h"
+#include "node.h"
+using namespace std;
 
-Node::Node(Student* s) {
-    student = s;
-    next = nullptr;
+// base functions for node class (linked lists)
+
+Node::Node(Student*new_value, Node*new_next){ // constructor
+	value = new_value;
 }
 
-Node::~Node() {
-    
+Node::~Node(){ // destructor
+	delete &value;
+	next = nullptr;
 }
 
-Node* Node::getNext() {
-    return next;
+void Node::set_value(Student*new_value){
+	value = new_value;
 }
 
-Student* Node::getStudent() {
-    return student;
+Student* Node::get_value(){
+	return value;
 }
 
-void Node::setNext(Node* n) {
-    next = n;
+void Node::set_next(Node*new_next){
+	next = new_next;
+}
+
+Node* Node::get_next(){
+	return next;
 }
