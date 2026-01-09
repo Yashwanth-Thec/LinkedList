@@ -7,10 +7,11 @@ using namespace std;
 
 Node::Node(Student*new_value, Node*new_next){ // constructor
 	value = new_value;
+	next = new_next;
 }
 
 Node::~Node(){ // destructor
-	delete &value;
+	
 	next = nullptr;
 }
 
